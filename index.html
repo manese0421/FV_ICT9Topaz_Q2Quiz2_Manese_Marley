@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBOTICS 101 Club Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.pinimg.com/736x/63/bf/ac/63bfac918e0f6fee071d139974052945.jpg" type="image/x-icon">
+    <style>
+        body {
+            background: url('https://i.pinimg.com/736x/a1/14/88/a1148892030b8662c3d4dcb5698d48f8.jpg') no-repeat center center fixed;
+            background-size: cover; 
+            color: #fc66b3; 
+            font-family: 'Roboto Mono', sans-serif;
+            overflow-x: hidden;
+        }
+        .navbar {
+            background-color: #fadeec;
+            border: 1px solid #fc66b3;
+            border-radius: 12px;
+            box-shadow: 0px 0px 25px rgba(255, 163, 210);
+            margin: 20px auto;
+            max-width: 1100px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar-brand {
+            color: #fc66b3 !important;
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 20px;
+        }
+        .btn-navbar {
+            background-color: #fc66b3;
+            color: #fff;
+            border: 1px solid #fc66b3;
+            font-family: 'Roboto Mono', sans-serif;
+            margin-left: 10px;
+            border-radius: 8px;
+            padding: 8px 15px;
+        }
+        .btn-navbar:hover {
+            background-color: #ffebf6;
+            color: #fc66b3;
+        }
+        .form-container {
+            background-color: #fadeec;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 25px rgba(255, 163, 210);
+            max-width: 700px;
+            margin: auto;
+            margin-top: 50px;
+            border: 1px solid #fc66b3; 
+        }
+        .form-heading {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #fc66b3; 
+            margin-bottom: 30px;
+            text-shadow: 0px 0px 10px rgba(255, 163, 210);
+        }
+        label {
+            color: #fc66b3; 
+            font-size: 14px;
+        }
+        input, select, textarea {
+            background-color: #ffebf6; 
+            color: #ff66b2; 
+            border: 1px solid #f07fbd; 
+            border-radius: 8px;
+            padding: 10px;
+        }
+        input::placeholder, textarea::placeholder {
+            color: #ff66b2; 
+            font-family: 'Roboto Mono', sans-serif;
+        }
+        .btn-primary {
+            background-color: #fc66b3; 
+            border-color: #fc66b3; 
+            color: #fff; 
+            font-family: 'Roboto Mono', sans-serif;
+            width: 100%;
+        }
+        .btn-primary:hover {
+            background-color: #ffebf6;
+            color: #fc66b3; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Sample Websites by Our Club Members!</div>
+        <div>
+            <button class="btn btn-navbar" onclick="window.open('website1.html', '_blank')">Member 1's Website</button>
+            <button class="btn btn-navbar" onclick="window.open('website2.html', '_blank')">Member 2's Website</button>
+            <button class="btn btn-navbar" onclick="window.open('website3.html', '_blank')">Member 3's Website</button>
+        </div>
+    </nav>
+    <div class="form-container">
+        <h1 class="form-heading">✮ Welcome to Robotics 101 ⋆˙</h1>
+        <form>
+            <label for="name">── Please enter your name .ִ𖤐</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+            <label for="age">── Please enter your age .ִ𖤐</label><br>
+            <input type="number" id="age" placeholder="Enter your age" required><br><br>
+
+            <label for="email">── Please enter an e-mail .ִ𖤐</label><br>
+            <input type="email" id="email" placeholder="you@example.com" required><br><br>
+
+            <label for="phone">── Please enter your phone number .ִ𖤐</label><br>
+            <input type="tel" id="phone" placeholder="123-456-7890" required><br><br>
+
+            ★ What kind of are you interested in learning? ᯓ <br>
+            <input type="checkbox" id="programming" value="programming">
+            <label for="programming">Programming</label><br>
+            <input type="checkbox" id="electronics" value="electronics">
+            <label for="electronics">Electronics</label><br>
+            <input type="checkbox" id="mechanical-design" value="mechanical-design">
+            <label for="mechanical-design">Mechanical Design</label><br><br>
+
+            ★ How experienced are you? ᯓ <br>
+            <input type="radio" name="experienceLevel" id="beginner" value="beginner" required>
+            <label for="beginner">Beginner</label><br>
+            <input type="radio" name="experienceLevel" id="intermediate" value="intermediate" required>
+            <label for="intermediate">Intermediate</label><br>
+            <input type="radio" name="experienceLevel" id="advanced" value="advanced" required>
+            <label for="advanced">Advanced</label><br><br>
+
+            <label for="project">⋆.˚ What are your preferred robotics project? ⭑.ᐟ</label><br>
+            <select id="project">
+                <option selected disabled>Choose a project...</option>
+                <option value="robot-arm">Robot Arm</option>
+                <option value="drone">Drone</option>
+                <option value="line-follower">Turret Detector</option>
+            </select><br><br>
+
+            <label for="statement">⭑⚝ Statement of Interest ๋࣭ </label><br>
+            <textarea id="statement" rows="5" placeholder="Please state why do you want to join Robotics 101."></textarea><br><br>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
